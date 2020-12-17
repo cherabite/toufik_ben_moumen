@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>تسجيل السيرة الذاتية للموظف</title>
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/bootstrap.min.css">
-    <link href="<?php echo base_url();?>assets/css/material-fullpalette.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">
+    <link href="<?php echo base_url(); ?>assets/css/material-fullpalette.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/jquery-ui.css">
     <link href='https://fonts.googleapis.com/css?family=Tajawal' rel='stylesheet'>
     <style>
     body {
@@ -95,7 +95,7 @@
 
 
 
-                                            <?php echo form_error("nom","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("nom", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -130,7 +130,7 @@
 
 
 
-                                            <?php echo form_error("prenom","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("prenom", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -463,7 +463,7 @@
 
 
 
-                                            <?php echo form_error("wilaya_n","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("wilaya_n", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -554,7 +554,7 @@
 
 
 
-                                            <?php echo form_error("nb_enfant","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("nb_enfant", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -589,7 +589,7 @@
 
 
 
-                                            <?php echo form_error("adresse","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("adresse", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -624,7 +624,7 @@
 
 
 
-                                            <?php echo form_error("tel","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("tel", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -659,7 +659,7 @@
 
 
 
-                                            <?php echo form_error("email","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("email", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -685,14 +685,15 @@
 
                                             <input type="file" name="image" />
 
-                                            <input type="hidden" name="old_image"
-                                                value="<?php if (isset($image) && $image!=""){echo $image; } ?>" />
+                                            <input type="hidden" name="old_image" value="<?php if (isset($image) && $image != "") {
+                                                                                                echo $image;
+                                                                                            } ?>" />
 
-                                            <?php if(isset($image_err) && !empty($image_err)) 
-
-                                               { foreach($image_err as $key => $error)
-
-                                                { echo "<div class=\"error-msg\"></div>"; } }?>
+                                            <?php if (isset($image_err) && !empty($image_err)) {
+                                                foreach ($image_err as $key => $error) {
+                                                    echo "<div class=\"error-msg\"></div>";
+                                                }
+                                            } ?>
 
                                         </div>
 
@@ -730,7 +731,7 @@
 
 
 
-                                            <?php echo form_error("fonction_first","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("fonction_first", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -767,7 +768,7 @@
 
 
 
-                                            <?php echo form_error("fonction_grade_first","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("fonction_grade_first", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -804,7 +805,7 @@
 
 
 
-                                            <?php echo form_error("fonction_actuel","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("fonction_actuel", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -831,7 +832,7 @@
 
                                             <input type="text" class="form-control span2 datepicker"
                                                 id="date_fonction_actuel" name="date_fonction_actuel"
-                                                value="<?php echo set_value("date_fonction_actuel","2020-12-14"); ?>">
+                                                value="<?php echo set_value("date_fonction_actuel", "2020-12-14"); ?>">
 
                                         </div>
 
@@ -839,7 +840,7 @@
 
 
 
-                                            <?php echo form_error("date_fonction_actuel","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("date_fonction_actuel", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -872,7 +873,7 @@
 
 
 
-                                            <?php echo form_error("grade","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("grade", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -898,7 +899,7 @@
 
                                             <input type="date" class="form-control span2 datepicker" id="date_grade"
                                                 name="date_grade"
-                                                value="<?php echo set_value("date_grade","2020-12-14"); ?>">
+                                                value="<?php echo set_value("date_grade", "2020-12-14"); ?>">
 
                                         </div>
 
@@ -906,7 +907,7 @@
 
 
 
-                                            <?php echo form_error("date_grade","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("date_grade", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -1233,7 +1234,7 @@
 
 
 
-                                            <?php echo form_error("wilaya_fonction","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("wilaya_fonction", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -1268,7 +1269,7 @@
 
 
 
-                                            <?php echo form_error("etablissement","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("etablissement", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -1303,7 +1304,7 @@
 
 
 
-                                            <?php echo form_error("num_emp","<span class='label label-danger'>","</span>")?>
+                                            <?php echo form_error("num_emp", "<span class='label label-danger'>", "</span>") ?>
 
                                         </div>
 
@@ -1327,7 +1328,7 @@
 
                                             <button type="reset" class="btn btn-default ">Reset</button>
 
-                                            <button type="submit" class="btn btn-info ">Submit</button>
+                                            <button class="btn btn-info ">Submit</button>
 
                                         </div>
 
@@ -1438,11 +1439,11 @@
         </div>
     </div>
 
-    <script src="<?php echo base_url();?>assets/js/jquery-2.1.4.min.js"></script>
-    <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery-2.1.4.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.min.js"></script>
-    <script src="<?php echo base_url();?>assets/js/jquery-ui.min.js"></script>
+    <script src="<?php echo base_url(); ?>assets/js/jquery-ui.min.js"></script>
     <script>
     $(document).ready(function() {
         $("body").on('click', '.btn-add-more', function(e) {
@@ -1484,7 +1485,7 @@
         $("#frm_submit").on('submit', function(e) {
             e.preventDefault();
             $.ajax({
-                url: '<?php echo base_url() ?>welcome/batchInsert',
+                url: '<?php echo base_url() ?>index.php/Cv/add',
                 type: 'POST',
                 data: $("#frm_submit").serialize()
             }).always(function(response) {
